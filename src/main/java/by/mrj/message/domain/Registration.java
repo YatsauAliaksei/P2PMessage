@@ -18,10 +18,10 @@ import static by.mrj.crypto.util.CryptoUtils.doubleSha256;
 @Builder
 @EqualsAndHashCode
 public class Registration implements Serializable, Hashable {
-    @NonNull
-    String networkAddress;
-    @NonNull
-    String address;
+//    @NonNull
+    String networkAddress; // host
+//    @NonNull
+    String address; // public key hash sha256ripemd160
 
     @Override
     public String hash() {
