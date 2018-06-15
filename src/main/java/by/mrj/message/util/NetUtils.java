@@ -2,20 +2,13 @@ package by.mrj.message.util;
 
 
 import by.mrj.message.domain.Message;
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-@Log4j2
+@Slf4j
 public abstract class NetUtils {
     public static final String MAGIC = "MAGIC";
 
